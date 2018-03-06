@@ -1,23 +1,23 @@
 development:
   adapter: mysql2
   encoding: utf8
-  database: rails_exercise_ac9_development
-  host: localhost
+  database: rails_exercise_ac9
+  host: 127.0.0.1
   username: root
-  password:
+  password: 12345678
 
 test:
   adapter: mysql2
   encoding: utf8
-  database: rails_exercise_ac9_test
-  host: localhost
+  database: rails_exercise_ac9
+  host: 127.0.0.1
   username: root
-  password:
+  password: 12345678
 
 production:
   adapter: mysql2
   encoding: utf8
-  database: rails_exercise_ac9_production
+  database: rails_exercise_ac9
   host: localhost
   username: root
-  password:
+  password: 12345678
