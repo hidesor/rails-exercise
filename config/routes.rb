@@ -1,9 +1,10 @@
 Rails.application.routes.draw do
 
+  resources :models
   mount ActionCable.server => "/cable"
 
   resources :messages
-  
+
   require 'sidekiq/web'
   authenticate :user, lambda { |u| u.admin? } do
     mount Sidekiq::Web => '/sidekiq'
@@ -27,6 +28,10 @@ Rails.application.routes.draw do
       post :subscribe
       post :unsubscribe
     end
+  end
+
+  namespace :admin do
+    resources :words
   end
 
   get "/demo" => "welcome#index"
