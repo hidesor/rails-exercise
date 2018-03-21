@@ -1,6 +1,7 @@
 <p id="notice"><%= notice %></p>
 
 <h1>單字維護</h1>
+<%= link_to '新增單字', new_admin_word_path, class: "btn btn-primary" %>
 
 <table>
   <thead>
@@ -23,7 +24,3 @@
     <% end %>
   </tbody>
 </table>
-
-<br>
-
-<%= link_to '新增單字', new_admin_word_path %>
