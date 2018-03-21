@@ -3,13 +3,12 @@
 <h1>單字維護</h1>
 <%= link_to '新增單字', new_admin_word_path, class: "btn btn-primary" %>
 
-<table>
+<table class='table table-bordered table_breaking'>
   <thead>
     <tr>
       <td>單字</td>
       <td>說明</td>
-      <th>編輯</th>
-      <th>刪除</th>
+      <th></th>
     </tr>
   </thead>
 
@@ -18,8 +17,10 @@
       <tr>
         <td><%= word.name %></td>
         <td><%= word.content %></td>
-        <td><%= link_to 'Edit', edit_admin_word_path(word) %></td>
-        <td><%= link_to 'Destroy', admin_word_path(word), method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td>
+          <%= link_to '編輯', edit_admin_word_path(word), class: "btn btn-primary" %>
+          <%= link_to '刪除', admin_word_path(word), method: :delete, data: { confirm: '確定刪除?' }, class: "btn btn-danger" %>
+        </td>
       </tr>
     <% end %>
   </tbody>
