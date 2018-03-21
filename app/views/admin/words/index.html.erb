@@ -1,21 +1,22 @@
 <p id="notice"><%= notice %></p>
-
 <h1>單字維護</h1>
-<%= link_to '新增單字', new_admin_word_path, class: "btn btn-primary" %>
-
+<h1><%= link_to '新增單字', new_admin_word_path, class: "btn btn-primary" %></h1>
 <table class='table table-bordered table_breaking'>
   <thead>
     <tr>
+      <td></td>
       <td>單字</td>
       <td>說明</td>
       <th></th>
     </tr>
   </thead>
-
   <tbody>
     <% @words.each do |word| %>
       <tr>
-        <td><%= word.name %></td>
+        <% word_id = 'word_' +  word.id.to_s %>
+        <% btn_id = 'btn_' +  word.id.to_s %>
+        <td><button type="button" id="<%= btn_id %>" class="btn btn-primary js-sound" method="POST">發音</button></td>
+        <td id="<%= word_id %>" ><%= word.name %></td>
         <td><%= word.content %></td>
         <td>
           <%= link_to '編輯', edit_admin_word_path(word), class: "btn btn-primary" %>
@@ -25,3 +26,5 @@
     <% end %>
   </tbody>
 </table>
+ <iframe id="word_sound"></iframe> 
+<%= javascript_include_tag 'admin/word' %>
