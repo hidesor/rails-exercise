@@ -5,8 +5,10 @@ $(document).ready(function(){
      word = $('#'+word_id).html();
      url = "http://translate.google.com/translate_tts?ie=UTF-8&total=1&idx=0&textlen=32&client=tw-ob&q=" + word + "&tl=en-gb";
      // location.href = url;
-     // console.log(url);
-     document.getElementById("word_sound").src = url;
+     // url = 'https://www.google.com.tw/';
+     console.log(url);
+     iframe = document.getElementById("word_sound");
+     iframe.src = url;
      // window.open(url, 'test', config='height=100,width=100');
   });
 });
