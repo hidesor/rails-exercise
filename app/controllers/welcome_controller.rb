@@ -1,6 +1,12 @@
 class WelcomeController < ApplicationController
 
   def index
+    @words = Word.select("times").group("times").order(times: :asc)
+    # Order.select("store_name, sum(sales)").group("store")
+  end
+
+  def word
+    @words = Word.where(times: params[:times]).order(name: :asc)
   end
 
   def something

@@ -1,36 +1,17 @@
-<h2>HERE!</h2>
+<div class="jumbotron text-center">
+  <h1>Ryan's Learning Website</h1>
+  <p>The first step is always the hardest,If at first you don’t succeed, try, try again</p>
+</div>
 
-<%= link_to "load something", "#", :id => "ajax-load" %>
-
-<%= link_to "load script", something_path, :remote => true %>
-
-<%= link_to 'load json', something_path, :id =>'ajax-json' %>
-
-<div id="content"></div>
-
-<script>
-
-  $("#ajax-json").click(function(e){
-    e.preventDefault();
-    var url = $(this).attr("href");
-    $.ajax({
-      url: url,
-      dataType: 'json',
-      success: function(data){
-        console.log(data)
-      }
-    })
-  })
-
-  $("#ajax-load").on("click", function(e){
-
-    $.ajax({
-      url: "/something",
-      success: function(data) {
-        $("#content").html(data)
-      }
-    })
-
-  });
-
-</script>
+<div class="container">
+  <div class="row">
+    <% @words.each do | word |%>
+      <div class="col-sm-4">
+        <h3>Week<%= word.times%></h3>
+        <%= link_to('Words', welcome_word_url(times: word.times), class: 'btn btn-large btn-primary')  %>
+        <p></p>
+        <p></p>
+      </div>
+    <% end %>
+  </div>
+</div>

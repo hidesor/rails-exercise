@@ -1,0 +1,30 @@
+<div class="an-component-body">
+    <div class="an-helper-block">
+        <div class="table-responsive">
+            <table class="table table-bordered table_breaking">
+                <thead>
+                    <tr>
+                      <th></th>
+                      <th>活動名稱</th>
+                      <th>主辦</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <% @words.each do | word | %>
+                        <tr>
+                            <% word_id = 'word_' +  word.id.to_s %>
+                            <% btn_id = 'btn_' +  word.id.to_s %>
+                            <td><button type="button" id="<%= btn_id %>" class="btn btn-primary js-sound" method="POST">發音</button></td>
+                            <td id="<%= word_id %>" ><%= word.name %></td>
+                            <td> <%= word.content %> </td>
+                        </tr>
+                    <% end %>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>
+<iframe src="" id="word_sound"></iframe><br>
+<%= link_to('Back', root_path, class: 'btn btn-large btn-primary')  %>
+
+<%= javascript_include_tag 'admin/word' %>
