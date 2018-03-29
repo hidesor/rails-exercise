@@ -5,6 +5,7 @@
   <thead>
     <tr>
       <td></td>
+      <td>第幾週</td>
       <td>單字</td>
       <td>說明</td>
       <th></th>
@@ -16,6 +17,7 @@
         <% word_id = 'word_' +  word.id.to_s %>
         <% btn_id = 'btn_' +  word.id.to_s %>
         <td><button type="button" id="<%= btn_id %>" class="btn btn-primary js-sound" method="POST">發音</button></td>
+        <td><%= word.times %></td>
         <td id="<%= word_id %>" ><%= word.name %></td>
         <td><%= word.content %></td>
         <td>

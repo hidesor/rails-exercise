@@ -2,9 +2,8 @@ class Admin::WordsController < ApplicationController
   before_action :set_word, only: [:show, :edit, :update, :destroy]
 
   def index
-    @words = Word.order(name: :asc).paginate :page => params[:page], :per_page => 10
+    @words = Word.order(times: :asc).paginate :page => params[:page], :per_page => 10
   end
-
 
   def show
   end
@@ -52,6 +51,6 @@ class Admin::WordsController < ApplicationController
     end
 
     def word_params
-      params.require(:word).permit(:name, :content)
+      params.require(:word).permit(:name, :content, :times)
     end
 end
