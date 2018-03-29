@@ -25,6 +25,11 @@
       </tr>
     <% end %>
   </tbody>
+  <div class="t-center">
+      <%= paginate @words %>
+  </div>
 </table>
+
+
  <iframe src="" id="word_sound"></iframe>
 <%= javascript_include_tag 'admin/word' %>

@@ -2,8 +2,9 @@ class Admin::WordsController < ApplicationController
   before_action :set_word, only: [:show, :edit, :update, :destroy]
 
   def index
-    @words = Word.all
+    @words = Word.order(name: :asc).paginate :page => params[:page], :per_page => 10
   end
+
 
   def show
   end
