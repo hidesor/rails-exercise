@@ -7,10 +7,10 @@
   <div class="row">
     <% @words.each do | word |%>
       <div class="col-sm-4">
-        <h3>Week<%= word.times%></h3>
-        <%= link_to('Words', welcome_word_url(times: word.times), class: 'btn btn-large btn-primary')  %>
-        <p></p>
-        <p></p>
+        <span class="border border-primary">
+          <h3>Week<%= word.times%></h3>
+          <%= link_to('Words', welcome_word_url(times: word.times), class: 'btn btn-large btn-primary')  %>
+        </span>
       </div>
     <% end %>
   </div>
