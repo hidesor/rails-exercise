@@ -1,17 +1,27 @@
-<div class="jumbotron text-center">
-  <h1>Ryan's Learning Website</h1>
-  <p>The first step is always the hardest,If at first you don’t succeed, try, try again</p>
-</div>
+
 
 <div class="container">
-  <div class="row">
-    <% @words.each do | word |%>
-      <div class="col-sm-4">
-        <span class="border border-primary">
-          <h3>Week<%= word.times%></h3>
-          <%= link_to('Words', welcome_word_url(times: word.times), class: 'btn btn-large btn-primary')  %>
-        </span>
-      </div>
-    <% end %>
-  </div>
+    <div class="jumbotron text-center">
+        <h2>Ryan's Learning Website</h2>
+        <p>The first step is always the hardest,If at first you don’t succeed, try, try again</p>
+    </div>
+
+    <div class="panel panel-default">
+        <div class="panel-heading">
+            <h3 class="panel-title">
+                Words
+            </h3>
+        </div>
+        <div class="panel-body">
+            <% @words.each do | word |%>
+                <div class="col-sm-3">
+                    <h2>
+                        <%= link_to('Words of week ' + word.times.to_s, welcome_word_url(times: word.times), class: 'btn btn-large btn-primary')  %>
+                    </h2>
+                </div>
+            <% end %>
+        </div>
+    </div>
+
+
 </div>
