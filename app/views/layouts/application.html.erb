@@ -5,12 +5,9 @@
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
-  <%= render 'layouts/header' %>
 </head>
 <body>
-
 <div id="from-top" class="container">
-
   <% if notice %>
     <p class="notice"><%= notice %></p>
   <% end %>
@@ -18,8 +15,13 @@
   <% if alert %>
     <p class="alert"><%= alert %></p>
   <% end %>
+</div>
+
+<div id="site-wrapper" class="site_wrapper">
+  <%= render 'layouts/header' %>
   <%= yield %>
 </div>
+
 
 </body>
 </html>
