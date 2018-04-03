@@ -1,5 +1,5 @@
 .background-img {
-  background-image: url(image-path('193Ua509-2.jpg'));
+  background-image: url(image-path('193Ua509-2.jpg')) center center fixed no-repeat;
 }
 .to_white_text {
   color: white;
@@ -8,5 +8,5 @@
     0px 2px 0px #b0b0b0,
     0px 3px 0px #a0a0a0,
     0px 4px 0px #909090,
-    0px 5px 10px rgba(0, 0, 0, 0.6); 
+    0px 5px 10px rgba(0, 0, 0, 0.6);
 }
