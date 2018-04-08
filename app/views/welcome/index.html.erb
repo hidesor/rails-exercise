@@ -11,12 +11,14 @@
               Weekly words are organized as follows,Click the button to read more.
           </p>
           <hr>
+          <div class="row">
             <% @words.each do | word |%>
-                <div class="col-sm-3">
+                <div class="col-md-2 col-sm-3">
                     <h2>
                         <%= link_to('Words of week ' + word.times.to_s, welcome_word_url(times: word.times), class: 'btn btn-large btn-primary')  %>
                     </h2>
                 </div>
             <% end %>
+          </div>
         </div>
     </div>
