@@ -1,6 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
+ruby '2.3.1'
 gem 'rails', '5.0.0'
 
 gem "puma"
@@ -8,13 +9,13 @@ gem "puma"
 # Use sqlite3 as the database for Active Record
 # gem 'sqlite3'
 
-gem 'rack-mini-profiler'
+# gem 'rack-mini-profiler'
 
 gem 'ejs'
 gem 'vuejs-rails'
 gem 'react-rails'
 
-gem 'mysql2'
+gem 'mysql2', '~> 0.4.0'
 
 gem 'sidekiq'
 
@@ -34,6 +35,7 @@ gem 'bootstrap-sass'
 gem "select2-rails"
 
 gem 'devise'
+# gem 'redis'
 
 gem 'kaminari'
 gem 'faker'

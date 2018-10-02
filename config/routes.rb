@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
 
   resources :models
-  mount ActionCable.server => "/cable"
+  # mount ActionCable.server => "/cable"
 
   resources :messages
 
