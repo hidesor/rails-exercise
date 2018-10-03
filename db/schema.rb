@@ -10,7 +10,19 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20180329150029) do
+ActiveRecord::Schema.define(version: 20181003134441) do
+
+  create_table "attachments", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
+    t.integer  "attachable_id"
+    t.string   "attachable_type"
+    t.string   "attachable_additional_type"
+    t.string   "attachment_file_name"
+    t.integer  "attachment_file_size"
+    t.string   "attachment_content_type"
+    t.datetime "attachment_updated_at"
+    t.datetime "created_at",                 null: false
+    t.datetime "updated_at",                 null: false
+  end
 
   create_table "categories", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.string   "name"
