@@ -47,3 +47,11 @@
         <% end %>
     </div>
 </div>
+
+<% @word.attachments.each do |attachment| %>
+    <% if attachment.attachment.path %>
+        <% file_name = attachment.attachment.original_filename %>
+        <% file_path = root_url + attachment.attachment.url %>
+        <a href="<%= file_path %>", target="_blank"><%= file_name %></a>
+    <% end %>
+<% end %>
