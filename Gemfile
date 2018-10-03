@@ -57,6 +57,8 @@ gem 'will_paginate'
 # gem 'unicorn'
 gem 'paperclip'
 
+gem 'pry-byebug'
+
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
 

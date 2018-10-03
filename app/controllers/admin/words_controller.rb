@@ -30,6 +30,22 @@ class Admin::WordsController < ApplicationController
   def update
     respond_to do |format|
       if @word.update(word_params)
+        # 上傳圖片
+        params[:files].each do |file|
+          img_attachment = {
+            filename: file.original_filename,
+            type: file.content_type,
+            headers: file.headers,
+            tempfile: file.tempfile
+          }
+
+          file_attachment = Attachment.new
+          file_attachment.attachment = ActionDispatch::Http::UploadedFile.new(img_attachment)
+          file_attachment.attachable_id = @word.id
+          file_attachment.attachable_type = 'Word'
+          file_attachment.save
+        end
+
         format.html { redirect_to edit_admin_word_path(@word), notice: '資料更新成功' }
       else
         format.html { render :edit }
