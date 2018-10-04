@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-ruby '2.3.1'
+ruby '2.3.6'
 gem 'rails', '5.0.0'
 
 gem "puma"
@@ -35,7 +35,7 @@ gem 'bootstrap-sass'
 gem "select2-rails"
 
 gem 'devise'
-# gem 'redis'
+gem 'redis'
 
 gem 'kaminari'
 gem 'faker'
@@ -63,9 +63,7 @@ gem 'pry-byebug'
 # gem 'capistrano-rails', group: :development
 
 group :development, :test do
-
   gem "rspec-rails"
-
   gem 'byebug', platform: :mri
 end
 

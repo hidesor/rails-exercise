@@ -307,6 +307,7 @@ DEPENDENCIES
   puma
   rails (= 5.0.0)
   react-rails
+  redis
   rspec-rails
   sass-rails
   sdoc
@@ -323,7 +324,7 @@ DEPENDENCIES
   will_paginate
 
 RUBY VERSION
-   ruby 2.3.1p112
+   ruby 2.3.6p384
 
 BUNDLED WITH
-   1.16.0
+   1.16.5
