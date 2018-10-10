@@ -41,7 +41,6 @@ bower.json
 /spec/tmp
 
 public/system
-public/assets
 public/uploads
 public/attachments
 
