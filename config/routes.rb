@@ -30,6 +30,7 @@ Rails.application.routes.draw do
     end
   end
 
+  resources :houses
   namespace :admin do
     resources :words
   end
