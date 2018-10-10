@@ -58,6 +58,7 @@ gem 'will_paginate'
 gem 'paperclip'
 
 gem 'pry-byebug'
+gem 'lazy_high_charts'
 
 # Use Capistrano for deployment
 # gem 'capistrano-rails', group: :development
