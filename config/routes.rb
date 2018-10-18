@@ -31,6 +31,7 @@ Rails.application.routes.draw do
   end
 
   resources :houses
+
   namespace :admin do
     resources :words
   end
@@ -38,6 +39,7 @@ Rails.application.routes.draw do
   get "/demo" => "welcome#index"
   get "/welcome/word" => "welcome#word"
   get "/something" => "welcome#something"
+  get "/oxos" => "oxos#index"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
