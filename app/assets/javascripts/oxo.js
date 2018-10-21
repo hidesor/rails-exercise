@@ -28,17 +28,25 @@ $(document).ready(function(){
     $('.ox_btn').click(function(){
         console.log($(this)[0].id.substring(2,3));
         id = $(this)[0].id.substring(2,3);
-
-        user_push_arr.push(Number(id));
-        can_push_arr = jQuery.grep(can_push_arr, function(value) {
-            return value != id;
-        });
-
+        console.log('id',id);
         console.log('can_push_arr',can_push_arr);
         console.log('user_push_arr',user_push_arr);
-        $(this).html('O');
+        console.log('index',can_push_arr.indexOf(Number(id)));
 
-        play_by_npc();
+        if(can_push_arr.indexOf(Number(id)) == -1 ){
+            alert('請選其他格子喲!!');
+        }else{
+
+            user_push_arr.push(Number(id));
+            can_push_arr = jQuery.grep(can_push_arr, function(value) {
+                return value != id;
+            });
+
+
+            $(this).html('O');
+
+            play_by_npc();
+        }
     });
 
 
