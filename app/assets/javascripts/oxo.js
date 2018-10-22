@@ -15,7 +15,34 @@ $(document).ready(function(){
     restart();
 
     function randomSort(a, b) {
-      return Math.random() > 0.5 ? -1 : 1;
+        return Math.random() > 0.5 ? -1 : 1;
+    }
+
+    var try_success = function(){
+        $.each(success_arr.sort(randomSort), function(index, value ) {
+            let intersection = value.filter(v => user_push_arr.includes(v)) // [2]
+            console.log('intersection',intersection);
+            if(intersection.length == 2){
+                y0 = intersection[0];
+                y1 = intersection[1];
+                tmp_value = value;
+                console.log('y0,y1',y0,y1)
+                tmp_value = jQuery.grep(tmp_value, function(v) {
+                    return v != y0;
+                });
+                tmp_value = jQuery.grep(tmp_value, function(v) {
+                    return v != y1;
+                });
+                success_id = tmp_value[0];
+                console.log('tmp_value',tmp_value);
+                console.log('can_push_arr',can_push_arr);
+                if(can_push_arr.indexOf(Number(success_id)) !== -1 ){
+                    return false;
+                }
+            }
+        })
+        console.log('success_id',success_id);
+        return success_id;
     }
 
     var play_by_npc = function(){
@@ -30,7 +57,8 @@ $(document).ready(function(){
               }
           })
       }else{
-
+          console.log('user do', user_push_arr)
+          npc_do_id = try_success();
       }
 
       console.log('npc_do_id',npc_do_id);
