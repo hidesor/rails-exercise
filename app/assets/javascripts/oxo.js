@@ -68,17 +68,31 @@ $(document).ready(function(){
       });
 
       $('#ox'+npc_do_id).html('X');
+      if(success_arr.indexOf(npc_push_arr.sort()) > 0){
+          alert('you lost!');
+      }
+    }
+
+    var check_success = function(){
+        var is_success = false;
+        $.each(success_arr.sort(randomSort), function(index, value ) {
+            let intersection = value.filter(v => user_push_arr.includes(v)) // [2]
+            if(intersection.length == 3){
+                console.log('intersection',intersection);
+                alert('you win!');
+                is_success = true;
+                return false;
+            }
+        })
+        if(is_success == false){
+            play_by_npc();
+        }
     }
 
     // 使用者按下按鈕後動作
     $('.ox_btn').click(function(){
         console.log($(this)[0].id.substring(2,3));
         id = $(this)[0].id.substring(2,3);
-        console.log('id',id);
-        console.log('can_push_arr',can_push_arr);
-        console.log('user_push_arr',user_push_arr);
-        console.log('index',can_push_arr.indexOf(Number(id)));
-
         if(can_push_arr.indexOf(Number(id)) == -1 ){
             alert('請選其他格子喲!!');
         }else{
@@ -89,8 +103,7 @@ $(document).ready(function(){
             });
 
             $(this).html('O');
-
-            play_by_npc();
+            check_success();
         }
     });
 
