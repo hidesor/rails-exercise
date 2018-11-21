@@ -15,7 +15,7 @@
             <% @words.each do | word |%>
                 <div class="col-md-2 col-sm-3">
                     <h2>
-                        <%= link_to('Words of week ' + word.times.to_s, welcome_word_url(times: word.times), class: 'btn btn-large btn-primary')  %>
+                        <%= link_to('Words of week ' + word.times.to_s, welcomes_word_url(times: word.times), class: 'btn btn-large btn-primary')  %>
                     </h2>
                 </div>
             <% end %>
