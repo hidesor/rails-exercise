@@ -19,11 +19,11 @@
 
 //= require react
 //= require react_ujs
-//= require_tree ./components
+// require_tree ./components
 
 //= require cable
 //= require_tree ./channels
 
 //= require highcharts/highcharts
 //= require highcharts/highcharts-more
-//= require highcharts/highstock
+// require highcharts/highstock
