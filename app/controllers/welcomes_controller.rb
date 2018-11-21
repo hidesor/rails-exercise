@@ -1,4 +1,4 @@
-class WelcomeController < ApplicationController
+class WelcomesController < ApplicationController
 
   def index
     @words = Word.select("times").group("times").order(times: :asc)
