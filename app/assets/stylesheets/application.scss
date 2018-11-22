@@ -5,7 +5,16 @@
 @import "select2-bootstrap";
 
 
-
+body,
+html {
+    font-family: Arial,Helvetica,sans-serif;
+    color: #626264;
+    height: 100%;
+    background-image: image-url("bird_background.jpg");
+    // background-position: 30% 30%;
+    background-position:top right;
+    background-attachment : fixed;
+}
 #top-bar{
  width:100%;
  height:50px;
