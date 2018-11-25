@@ -11,7 +11,6 @@ class MessagesController < ApplicationController
 
     html = ApplicationController.renderer.render( :partial => "messages/message", :locals => { :message => @message } )
 
-    ActionCable.server.broadcast "public_room", { :html => html }
   end
 
   protected
