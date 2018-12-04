@@ -30,6 +30,11 @@ html {
 .white_back{
    background-color: rgba(255,255,255,0.5);
 }
+
+.index_flower_div{
+  background-color: transparent;
+  background-image: image-url("5861.jpg");
+}
 .div_align{
    padding-top: 15px;
    padding-right: 15px;
@@ -39,7 +44,7 @@ html {
 
 .menu_bar{
    margin-top: 15%;
-   margin-left: 2%;
+   margin-left: 10%;
    font-size: 20px;
 }
 
@@ -55,6 +60,10 @@ html {
 .portrait_word{
     -webkit-writing-mode: vertical-lr;
     writing-mode: vertical-lr;
+}
+
+.word-shadow{
+  text-shadow: 1px 1px 0px #CCCCCC;
 }
 
 //------
