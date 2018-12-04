@@ -14,7 +14,8 @@ html {
     // font-family: Noto Sans CJK SC, Source Han Sans SC, Source Han Sans CN, sans-serif;
     color: #626264;
     height: 100%;
-    background-image: image-url("bird_background.jpg");
+    // background-image: image-url("bird_background.jpg");
+    background-image: image-url("paper_01.jpg");
     background-position: 30% 30%;
     background-position:top right;
     background-attachment : fixed;
@@ -27,7 +28,7 @@ html {
 }
 
 .white_back{
-   background-color: rgba(255,255,255,0.9);
+   background-color: rgba(255,255,255,0.5);
 }
 .div_align{
    padding-top: 15px;
