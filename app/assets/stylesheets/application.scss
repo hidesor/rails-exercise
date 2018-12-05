@@ -43,9 +43,10 @@ html {
 }
 
 .menu_bar{
-   margin-top: 15%;
+   height: 300px;
+   margin-top: 30%;
    margin-left: 10%;
-   font-size: 20px;
+   font-size: 14pt;
 }
 
 .menu_btn_style{
@@ -72,6 +73,15 @@ html {
   position:fixed;
   bottom: 30px;
   right: 30px;
+}
+
+
+//-----bird----
+.bird_01{
+  width:20%;
+  position:fixed;
+  top: 30px;
+  left: 30px;
 }
 
 //------
