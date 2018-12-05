@@ -25,5 +25,5 @@
 // require highcharts/highstock
 
 $(document).ready(function(){
-  
-}
+  // $("#bicycle").css("padding-bottom": "20px","width":"40%", "height":"40%")
+})
