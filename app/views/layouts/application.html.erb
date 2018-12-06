@@ -9,6 +9,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
+  <%= render 'layouts/header' %>
+
+  <p class="notice"><%= notice %></p>
+  <p class="alert"><%= alert %></p>
+
   <div id="from-top" class="container">
     <% if notice %>
       <p class="notice"><%= notice %></p>
