@@ -1,3 +1,20 @@
 <img id="bicycle" src="<%= image_url("bicycle.png") %>" alt="Italian Trulli" class="bicycle_01">
 
 <img id="bicycle" src="<%= image_url("bird.png") %>" alt="Italian Trulli" class="bird_01">
+
+
+
+
+    <div id='app'>
+        {{ message }}
+    </div>
+
+    <script>
+        new Vue({
+            el:'#app',
+            data:{
+                message:'Hello World!'
+            }
+        });
+    </script>
+

@@ -68,6 +68,7 @@ $(document).ready(function(){
       });
 
       $('#ox'+npc_do_id).html('X');
+      console.log('npc_push_arr',npc_push_arr.sort())
       if(success_arr.indexOf(npc_push_arr.sort()) > 0){
           alert('you lost!');
       }
