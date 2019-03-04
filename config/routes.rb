@@ -38,6 +38,7 @@ Rails.application.routes.draw do
 
   get "/demo" => "welcome#index"
   get "/home" => "home#index"
+  get "/home/page" => "home#page"
   get "/welcomes/word" => "welcome#word"
   get "/something" => "welcome#something"
   get "/oxos" => "oxos#index"

@@ -9,7 +9,12 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 </head>
 <body>
-  <div id="from-top" class="container">
+  <%= render 'layouts/header' %>
+
+  <!-- <p class="notice"><%= notice %></p> -->
+  <!-- <p class="alert"><%= alert %></p> -->
+
+  <!-- <div id="from-top" class="container">
     <% if notice %>
       <p class="notice"><%= notice %></p>
     <% end %>
@@ -17,12 +22,13 @@
     <% if alert %>
       <p class="alert"><%= alert %></p>
     <% end %>
-  </div>
-  <!-- <%= render 'layouts/header' %> -->
-  <%= render 'layouts/menu' %>
+  </div> -->
+  <!-- <%= render 'layouts/menu' %> -->
+  
   <div class="body_yield">
     <%= yield %>
   </div>
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 </body>
 </html>
