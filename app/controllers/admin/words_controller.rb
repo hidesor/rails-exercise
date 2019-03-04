@@ -3,7 +3,7 @@ class Admin::WordsController < ApplicationController
 
   def index
     @words = Word.order(times: :asc).paginate :page => params[:page], :per_page => 10
-    House.get_house
+    # House.get_house
   end
 
   def show
@@ -21,7 +21,7 @@ class Admin::WordsController < ApplicationController
 
     respond_to do |format|
       if @word.save
-        format.html { redirect_to edit_admin_word_path(@word), notice: '資料建立成功' }
+        format.html { redirect_to admin_words_path, notice: '資料建立成功' }
       else
         format.html { render :new }
       end
