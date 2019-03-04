@@ -3,7 +3,7 @@ class Admin::WordsController < ApplicationController
 
   def index
     @words = Word.order(times: :asc).paginate :page => params[:page], :per_page => 10
-    House.get_house
+    # House.get_house
   end
 
   def show
