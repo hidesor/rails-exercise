@@ -23,6 +23,8 @@ gem 'sinatra', :github => "sinatra/sinatra", :require => nil
 
 # Use SCSS for stylesheets
 gem 'sass-rails'
+
+gem "font-awesome-rails"
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier'
 # Use CoffeeScript for .coffee assets and views
