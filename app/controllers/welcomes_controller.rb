@@ -1,8 +1,9 @@
 class WelcomesController < ApplicationController
 
   def index
-    @words = Word.select("times").group("times").order(times: :asc)
+    # @words = Word.select("times").group("times").order(times: :asc)
     # Order.select("store_name, sum(sales)").group("store")
+    @words = Word.all.order(id: :desc)
   end
 
   def word

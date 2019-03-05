@@ -1,24 +1,27 @@
 <%= stylesheet_link_tag 'welcome' %>
 
-    <div class="jumbotron jumbotron_top text-center background-img">
-        <h2 class="to_white_text">Ryan's Learning Website</h2>
-        <p class="to_white_text">The first step is always the hardest,If at first you don’t succeed, try, try again</p>
-    </div>
+<div class="jumbotron jumbotron_top text-center background-img">
+    <h2 class="to_white_text">Ryan's Learning Website</h2>
+    <p class="to_white_text">The first step is always the hardest,If at first you don’t succeed, try, try again</p>
+</div>
 
-    <div class="panel panel-default">
-        <div class="panel-body">
-          <p class="text-info">
-              Weekly words are organized as follows,Click the button to read more.
-          </p>
-          <hr>
+<div class="panel panel-default">
+    <div class="panel-body">
+        <p class="text-info">
+            Weekly words are organized as follows,Click the button to read more.
+        </p>
+        <hr>
         <div class="row">
-            <% @words.each do | word |%>
-                <div class="col-md-2 col-sm-3">
-                    <h2>
-                        <%= link_to('Words of week ' + word.times.to_s, welcomes_word_url(times: word.times), class: 'btn btn-large btn-primary')  %>
-                    </h2>
-                </div>
-            <% end %>
-          </div>
+        <% @words.each do | word |%>
+            <div class="col-md-2 col-sm-3 col-xs-4 col-xs-6">
+                <h2>
+                    <% btn_name = word.name.to_s %>
+                    <button id="<%= word.id %>" type="button" class="btn btn-success btn-lg">
+                        <%= btn_name %>
+                    </button>
+                </h2>
+            </div>
+        <% end %>
         </div>
     </div>
+</div>
