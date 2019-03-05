@@ -16,7 +16,7 @@
             <div class="col-md-2 col-sm-3 col-xs-4 col-xs-6">
                 <h2>
                     <% btn_name = word.name.to_s %>
-                    <button id="<%= word.id %>" type="button" class="btn btn-success btn-lg">
+                    <button id="<%= word.id %>" type="button" class="btn btn-success btn-lg word_btn">
                         <%= btn_name %>
                     </button>
                 </h2>
@@ -25,3 +25,5 @@
         </div>
     </div>
 </div>
+
+<%= javascript_include_tag 'welcome' %>
