@@ -42,7 +42,7 @@ Rails.application.routes.draw do
   get "/welcomes/word" => "welcome#word"
   get "/something" => "welcome#something"
   get "/oxos" => "oxos#index"
-  root 'home#index'
+  root 'welcomes#index'
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
