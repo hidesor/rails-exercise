@@ -22,6 +22,12 @@ $(document).ready(function(){
       }
   })
 
+  $("#reset_this_week").click(function(){
+      console.log('week');
+      $(".is_know").each(function(index){
+           $(this)[0].children[0].outerHTML = '<i class="fa fa-question" aria-hidden="true"></i>'; 
+      })
+  })
 });
 
 // <i class="fab fa-angellist"></i>
