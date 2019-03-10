@@ -7,11 +7,15 @@
 
 <div class="panel panel-default">
     <div class="panel-body">
+        <h2>
+            <a>Weekly words</a> 
+        </h2>
         <p class="text-info">
-            Weekly words are organized as follows,Click the button to read more.
+            Weekly words are organized as follows,Click the button to read more. 
         </p>
         <hr>
-        <div class="row">
+        <button type="button" class="btn btn-primary">Reset</button>
+        <div class="row"> 
         <% @words.each do | word |%>
             <div class="col-md-2 col-sm-3 col-xs-4 col-xs-6">
                 <h2>
