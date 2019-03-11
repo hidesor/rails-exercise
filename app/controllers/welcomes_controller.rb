@@ -3,7 +3,8 @@ class WelcomesController < ApplicationController
   def index
     # @words = Word.select("times").group("times").order(times: :asc)
     # Order.select("store_name, sum(sales)").group("store")
-    @words = Word.all.order(id: :desc)
+    @last_word = Word.all.order(created_at: :asc).last
+    @words = Word.where('created_at > ?', @last_word.created_at - 7.days).order(id: :desc)
   end
 
   def word
