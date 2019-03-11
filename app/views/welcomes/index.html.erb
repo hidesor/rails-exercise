@@ -24,7 +24,7 @@
                     <button id="<%= word.id %>" type="button" class="btn btn-success btn-lg word_btn" >
                         <%= btn_name %>
                     </button>
-                    <a class="is_know"><i class='fa fa-question' aria-hidden='true'></i></a>
+                    <a class="is_know_week"><i class='fa fa-question' aria-hidden='true'></i></a>
                 </h2>
             </div>
         <% end %>
@@ -38,15 +38,16 @@
             Before words are organized as follows,Click the button to read more.
         </p>
         <hr>
+        <button id="reset_this_before" type="button" class="btn btn-primary">Reset</button>
         <div class="row">
         <% @before_words.each do | word |%>
             <div class="col-md-2 col-sm-3 col-xs-4 col-xs-6">
                 <h2>
                     <% btn_name = word.name.to_s %>
-                    <button id="<%= word.id %>" type="button" class="btn btn-success btn-lg word_btn" >
+                    <button id="<%= word.id %>" type="button" class="btn btn-success btn-lg before_word" >
                         <%= btn_name %>
                     </button>
-                    <a class="is_know"><i class='fa fa-question' aria-hidden='true'></i></a>
+                    <a class="is_know_before"><i class='fa fa-question' aria-hidden='true'></i></a>
                 </h2>
             </div>
         <% end %>
