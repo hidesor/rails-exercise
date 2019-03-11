@@ -1,5 +1,6 @@
-class Admin::WordsController < ApplicationController
+class Admin::WordsController < Admin::AdminController
   before_action :set_word, only: [:show, :edit, :update, :destroy]
+
 
   def index
     @words = Word.order(times: :asc).paginate :page => params[:page], :per_page => 10
@@ -32,7 +33,7 @@ class Admin::WordsController < ApplicationController
     respond_to do |format|
       if @word.update(word_params)
         # 上傳圖片
-        if params[:files].present? 
+        if params[:files].present?
           params[:files].each do |file|
             img_attachment = {
               filename: file.original_filename,
