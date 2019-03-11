@@ -7,16 +7,17 @@
 
 <div class="panel panel-default">
     <div class="panel-body">
+        <!-- this week -->
         <h2>
-            <a>Weekly words</a> 
+            <a>Weekly words</a>
         </h2>
         <p class="text-info">
-            Weekly words are organized as follows,Click the button to read more. 
+            Weekly words are organized as follows,Click the button to read more.
         </p>
         <hr>
         <button id="reset_this_week" type="button" class="btn btn-primary">Reset</button>
-        <div class="row"> 
-        <% @words.each do | word |%>
+        <div class="row">
+        <% @this_week_words.each do | word |%>
             <div class="col-md-2 col-sm-3 col-xs-4 col-xs-6">
                 <h2>
                     <% btn_name = word.name.to_s %>
@@ -28,8 +29,32 @@
             </div>
         <% end %>
         </div>
+
+        <!-- before word -->
+        <h2>
+            <a>Before words</a>
+        </h2>
+        <p class="text-info">
+            Before words are organized as follows,Click the button to read more.
+        </p>
+        <hr>
+        <div class="row">
+        <% @before_words.each do | word |%>
+            <div class="col-md-2 col-sm-3 col-xs-4 col-xs-6">
+                <h2>
+                    <% btn_name = word.name.to_s %>
+                    <button id="<%= word.id %>" type="button" class="btn btn-success btn-lg word_btn" >
+                        <%= btn_name %>
+                    </button>
+                    <a class="is_know"><i class='fa fa-question' aria-hidden='true'></i></a>
+                </h2>
+            </div>
+        <% end %>
+        </div>
+
     </div>
 </div>
+
 
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
