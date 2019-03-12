@@ -10,3 +10,39 @@
     0px 4px 0px #909090,
     0px 5px 10px rgba(0, 0, 0, 0.6);
 }
+
+
+.week_button {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 8px 12px;
+    border: 0px solid #ffffff;
+    border-radius: 8px;
+    background: #5ea600;
+    background: -webkit-gradient(linear, left top, left bottom, from(#5ea600), to(#04610f));
+    background: -moz-linear-gradient(top, #5ea600, #04610f);
+    background: linear-gradient(to bottom, #5ea600, #04610f);
+    -webkit-box-shadow: #858585 0px 0px 3px 0px;
+    -moz-box-shadow: #858585 0px 0px 3px 0px;
+    box-shadow: #858585 0px 0px 3px 0px;
+    text-shadow: #591717 1px 1px 1px;
+    font: normal normal normal 12px verdana;
+    color: #ffffff;
+    text-decoration: none;
+}
+.week_button:hover,
+.week_button:focus {
+    background: #71c700;
+    background: -webkit-gradient(linear, left top, left bottom, from(#71c700), to(#057412));
+    background: -moz-linear-gradient(top, #71c700, #057412);
+    background: linear-gradient(to bottom, #71c700, #057412);
+    color: #ffffff;
+    text-decoration: none;
+}
+.week_button:active {
+    background: #386400;
+    background: -webkit-gradient(linear, left top, left bottom, from(#386400), to(#04610f));
+    background: -moz-linear-gradient(top, #386400, #04610f);
+    background: linear-gradient(to bottom, #386400, #04610f);
+}
