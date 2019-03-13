@@ -36,10 +36,23 @@ $(document).ready(function(){
           $(this)[0].children[0].outerHTML = '<i class="fab fa-angellist"></i>'
         }
     })
+  var this_week_clear = function(){
+      $(".is_know_week").each(function(index){
+          $(this)[0].hidden = true;
+      })
+  }
+  this_week_clear();
 
   $("#reset_this_week").click(function(){
       $(".is_know_week").each(function(index){
-           $(this)[0].children[0].outerHTML = '<i class="fa fa-question" aria-hidden="true"></i>';
+          $(this)[0].children[0].outerHTML = '<i class="fa fa-question" aria-hidden="true"></i>';
+      })
+  })
+
+  $("#start_this_week").click(function(){
+      $(".is_know_week").each(function(index){
+          $(this)[0].hidden = false;
+          $(this)[0].children[0].outerHTML = '<i class="fa fa-question" aria-hidden="true"></i>';
       })
   })
 

@@ -10,6 +10,8 @@
     0px 4px 0px #909090,
     0px 5px 10px rgba(0, 0, 0, 0.6);
 }
+
+//  每週單字
 .week_button {
     display: inline-block;
     text-align: center;
@@ -45,9 +47,47 @@
     background: linear-gradient(to bottom, #386400, #04610f);
 }
 
+// 設定每週單字
+.set_week_button {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 8px 12px;
+    border: 0px solid #ffffff;
+    border-radius: 10px;
+    background: #b6d600;
+    background: -webkit-gradient(linear, left top, left bottom, from(#b6d600), to(#859600));
+    background: -moz-linear-gradient(top, #b6d600, #859600);
+    background: linear-gradient(to bottom, #b6d600, #859600);
+    text-shadow: #591717 1px 1px 1px;
+    font: italic normal bold 16px arial;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase
+}
+.set_week_button:hover {
+    background: #daff00;
+    background: -webkit-gradient(linear, left top, left bottom, from(#daff00), to(#a0b400));
+    background: -moz-linear-gradient(top, #daff00, #a0b400);
+    background: linear-gradient(to bottom, #daff00, #a0b400);
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase
+}
+.set_week_button:active {
+    background: #6d8000;
+    background: -webkit-gradient(linear, left top, left bottom, from(#6d8000), to(#859600));
+    background: -moz-linear-gradient(top, #6d8000, #859600);
+    background: linear-gradient(to bottom, #6d8000, #859600);
+    text-transform: uppercase
+}
+.set_week_button:focus {
+    text-transform: uppercase
+}
 
 
 
+// 以往單字
 .before_button {
     display: inline-block;
     text-align: center;
