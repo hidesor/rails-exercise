@@ -43,6 +43,13 @@ $(document).ready(function(){
   }
   this_week_clear();
 
+  var before_clear = function(){
+      $(".is_know_before").each(function(index){
+          $(this)[0].hidden = true;
+      })
+  }
+  before_clear();
+
   $("#reset_this_week").click(function(){
       $(".is_know_week").each(function(index){
           $(this)[0].children[0].outerHTML = '<i class="fa fa-question" aria-hidden="true"></i>';

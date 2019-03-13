@@ -85,8 +85,6 @@
     text-transform: uppercase
 }
 
-
-
 // 以往單字
 .before_button {
     display: inline-block;
@@ -121,4 +119,42 @@
     background: -webkit-gradient(linear, left top, left bottom, from(#007099), to(#1791bd));
     background: -moz-linear-gradient(top, #007099, #1791bd);
     background: linear-gradient(to bottom, #007099, #1791bd);
+}
+
+// 以往單字設定
+.set_before_button {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 8px 12px;
+    border: 0px solid #ffffff;
+    border-radius: 10px;
+    background: #00abd6;
+    background: -webkit-gradient(linear, left top, left bottom, from(#00abd6), to(#003c96));
+    background: -moz-linear-gradient(top, #00abd6, #003c96);
+    background: linear-gradient(to bottom, #00abd6, #003c96);
+    text-shadow: #591717 1px 1px 1px;
+    font: italic normal bold 16px arial;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase
+}
+.set_before_button:hover {
+    background: #00cdff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#00cdff), to(#0048b4));
+    background: -moz-linear-gradient(top, #00cdff, #0048b4);
+    background: linear-gradient(to bottom, #00cdff, #0048b4);
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase
+}
+.set_before_button:active {
+    background: #006780;
+    background: -webkit-gradient(linear, left top, left bottom, from(#006780), to(#003c96));
+    background: -moz-linear-gradient(top, #006780, #003c96);
+    background: linear-gradient(to bottom, #006780, #003c96);
+    text-transform: uppercase
+}
+.set_before_button:focus {
+    text-transform: uppercase
 }
