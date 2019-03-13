@@ -1,13 +1,14 @@
 <p id="notice"><%= notice %></p>
-<h1>單字維護</h1>
-<h1><%= link_to '新增單字', new_admin_word_path, class: "btn btn-primary" %></h1>
+<div class='div_align_20'>
+<h1>Edit Words</h1>
+<h1><%= link_to 'Create Word', new_admin_word_path, class: "btn btn-primary" %></h1>
 <table class='table table-bordered table_breaking'>
   <thead>
     <tr>
       <td></td>
-      <td>第幾週</td>
-      <td>單字</td>
-      <td>說明</td>
+      <td>week</td>
+      <td>word</td>
+      <td>note</td>
       <th></th>
     </tr>
   </thead>
@@ -16,13 +17,13 @@
       <tr>
         <% word_id = 'word_' +  word.id.to_s %>
         <% btn_id = 'btn_' +  word.id.to_s %>
-        <td><button type="button" id="<%= btn_id %>" class="btn btn-primary js-sound" method="POST">google翻譯</button></td>
+        <td><button type="button" id="<%= btn_id %>" class="btn btn-primary js-sound" method="POST">translation</button></td>
         <td><%= word.times %></td>
         <td id="<%= word_id %>" ><%= word.name %></td>
         <td><%= word.content %></td>
         <td>
-          <%= link_to '編輯', edit_admin_word_path(word), class: "btn btn-primary" %>
-          <%= link_to '刪除', admin_word_path(word), method: :delete, data: { confirm: '確定刪除?' }, class: "btn btn-danger" %>
+          <%= link_to 'edit', edit_admin_word_path(word), class: "btn btn-primary" %>
+          <%= link_to 'delete', admin_word_path(word), method: :delete, data: { confirm: 'are you sure?' }, class: "btn btn-danger" %>
         </td>
       </tr>
     <% end %>
@@ -31,5 +32,5 @@
       <%= paginate @words %>
   </div>
 </table>
-
+</div>
 <%= javascript_include_tag 'admin/word' %>

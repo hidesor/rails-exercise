@@ -7,24 +7,71 @@
 
 <div class="panel panel-default">
     <div class="panel-body">
+        <!-- this week -->
+        <h2>
+            <a>Weekly words</a>
+        </h2>
         <p class="text-info">
             Weekly words are organized as follows,Click the button to read more.
         </p>
         <hr>
+        <button id="reset_this_week" type="button" class="btn btn-primary">Reset</button>
         <div class="row">
-        <% @words.each do | word |%>
+        <% @this_week_words.each do | word |%>
             <div class="col-md-2 col-sm-3 col-xs-4 col-xs-6">
                 <h2>
                     <% btn_name = word.name.to_s %>
-                    <button id="<%= word.id %>" type="button" class="btn btn-success btn-lg word_btn">
+                    <button id="<%= word.id %>" type="button" class="week_button word_btn" >
                         <%= btn_name %>
                     </button>
-                    <i class="fab fa-angellist"></i>
+                    <a class="is_know_week"><i class='fa fa-question' aria-hidden='true'></i></a>
                 </h2>
             </div>
         <% end %>
         </div>
+
+        <!-- before word -->
+        <h2>
+            <a>Before words</a>
+        </h2>
+        <p class="text-info">
+            Before words are organized as follows,Click the button to read more.
+        </p>
+        <hr>
+        <button id="reset_this_before" type="button" class="btn btn-primary">Reset</button>
+        <div class="row">
+        <% @before_words.each do | word |%>
+            <div class="col-md-2 col-sm-3 col-xs-4 col-xs-6">
+                <h2>
+                    <% btn_name = word.name.to_s %>
+                    <button id="<%= word.id %>" type="button" class="btn before_button word_btn" >
+                        <%= btn_name %>
+                    </button>
+                    <a class="is_know_before"><i class='fa fa-question' aria-hidden='true'></i></a>
+                </h2>
+            </div>
+        <% end %>
+        </div>
+
     </div>
 </div>
 
-<%= javascript_include_tag 'welcome' %>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
+
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
