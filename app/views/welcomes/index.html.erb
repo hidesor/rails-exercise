@@ -16,7 +16,7 @@
         </p>
         <hr>
         <button id="start_this_week" type="button" class="set_week_button">Start</button>
-        <button id="reset_this_week" type="button" class="set_week_button">Reset</button>
+        <button id="reset_this_week" type="button" class="set_week_button">Restart</button>
         <div class="row">
         <% @this_week_words.each do | word |%>
             <div class="col-md-2 col-sm-3 col-xs-4 col-xs-6">
@@ -39,7 +39,8 @@
             Before words are organized as follows,Click the button to read more.
         </p>
         <hr>
-        <button id="reset_this_before" type="button" class="btn btn-primary">Reset</button>
+        <button id="start_this_before" type="button" class="set_before_button">Start</button>
+        <button id="reset_this_before" type="button" class="set_before_button">Restart</button>
         <div class="row">
         <% @before_words.each do | word |%>
             <div class="col-md-2 col-sm-3 col-xs-4 col-xs-6">
