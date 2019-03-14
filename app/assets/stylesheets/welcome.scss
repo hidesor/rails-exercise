@@ -47,6 +47,42 @@
     background: linear-gradient(to bottom, #386400, #04610f);
 }
 
+
+// 仲要單字
+.important_button {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 8px 12px;
+    border: 1px solid #a12727;
+    border-radius: 8px;
+    background: #ff0000;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff0000), to(#a30505));
+    background: -moz-linear-gradient(top, #ff0000, #a30505);
+    background: linear-gradient(to bottom, #ff0000, #a30505);
+    text-shadow: #591717 1px 1px 1px;
+    font: normal normal normal 14px arial;
+    color: #ffffff;
+    text-decoration: none;
+}
+.important_button:hover,
+.important_button:focus {
+    background: #ff0000;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff0000), to(#c40606));
+    background: -moz-linear-gradient(top, #ff0000, #c40606);
+    background: linear-gradient(to bottom, #ff0000, #c40606);
+    color: #ffffff;
+    text-decoration: none;
+}
+.important_button:active {
+    background: #990000;
+    background: -webkit-gradient(linear, left top, left bottom, from(#990000), to(#a30505));
+    background: -moz-linear-gradient(top, #990000, #a30505);
+    background: linear-gradient(to bottom, #990000, #a30505);
+}
+
+
+
 // 設定每週單字
 .set_week_button {
     display: inline-block;
