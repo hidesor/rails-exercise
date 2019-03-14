@@ -21,9 +21,36 @@ html {
 }
 
 .jumbotron_top{
-   margin-top: -20px;
+     margin-top: -20px;
 }
 .div_align_20{
-  padding: 10px;
-  margin: 20px;
+    padding: 10px;
+    margin: 20px;
+}
+
+.padding_left_8{
+    padding-left: 8%;
+}
+.padding_5{
+    //padding-left: 5px;
+    padding-top: 5px;
+}
+
+.writing_tb-rl{
+  writing-mode: tb-rl;
+}
+.menu_bar{
+    height: 300px;
+    margin-top: 200px;
+    margin-left: 0%;
+    font-size: 14pt;
+}
+
+.fix{
+    position:fixed;
+}
+
+.portrait_word{
+    -webkit-writing-mode: vertical-lr;
+    writing-mode: vertical-lr;
 }
