@@ -48,8 +48,8 @@
 }
 
 
-// 仲要單字
-.important_button {
+// 重要單字
+.mark_button {
     display: inline-block;
     text-align: center;
     vertical-align: middle;
@@ -65,8 +65,8 @@
     color: #ffffff;
     text-decoration: none;
 }
-.important_button:hover,
-.important_button:focus {
+.mark_button:hover,
+.mark_button:focus {
     background: #ff0000;
     background: -webkit-gradient(linear, left top, left bottom, from(#ff0000), to(#c40606));
     background: -moz-linear-gradient(top, #ff0000, #c40606);
@@ -74,12 +74,47 @@
     color: #ffffff;
     text-decoration: none;
 }
-.important_button:active {
+.mark_button:active {
     background: #990000;
     background: -webkit-gradient(linear, left top, left bottom, from(#990000), to(#a30505));
     background: -moz-linear-gradient(top, #990000, #a30505);
     background: linear-gradient(to bottom, #990000, #a30505);
 }
+
+// 設定標記單字
+.set_mark_button {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 8px 12px;
+    border: 0px solid #a12727;
+    border-radius: 10px;
+    background: #ff8787;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ff8787), to(#ff430a));
+    background: -moz-linear-gradient(top, #ff8787, #ff430a);
+    background: linear-gradient(to bottom, #ff8787, #ff430a);
+    text-shadow: #591717 1px 1px 1px;
+    font: italic normal bold 16px arial;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase
+}
+.set_mark_button:hover,
+.set_mark_button:focus {
+    background: #ffa2a2;
+    background: -webkit-gradient(linear, left top, left bottom, from(#ffa2a2), to(#ff500c));
+    background: -moz-linear-gradient(top, #ffa2a2, #ff500c);
+    background: linear-gradient(to bottom, #ffa2a2, #ff500c);
+    color: #ffffff;
+    text-decoration: none;
+}
+.set_mark_button:active {
+    background: #995151;
+    background: -webkit-gradient(linear, left top, left bottom, from(#995151), to(#ff430a));
+    background: -moz-linear-gradient(top, #995151, #ff430a);
+    background: linear-gradient(to bottom, #995151, #ff430a);
+}
+
 
 
 
