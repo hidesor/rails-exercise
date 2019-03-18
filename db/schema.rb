@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20181009141048) do
+ActiveRecord::Schema.define(version: 20190318143630) do
 
   create_table "attachments", force: :cascade, options: "ENGINE=InnoDB DEFAULT CHARSET=utf8" do |t|
     t.integer  "attachable_id"
@@ -115,6 +115,7 @@ ActiveRecord::Schema.define(version: 20181009141048) do
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
     t.integer  "times"
+    t.boolean  "is_mark"
   end
 
 end

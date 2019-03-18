@@ -6,6 +6,7 @@ class WelcomesController < ApplicationController
     @last_word = Word.all.order(created_at: :asc).last
     @this_week_words = Word.where('created_at >= ?', @last_word.created_at - 7.days).order(id: :desc)
     @before_words = Word.where('created_at < ?', @last_word.created_at - 7.days).order(id: :desc)
+    @marked_words = Word.where(is_mark: true)
   end
 
   def word

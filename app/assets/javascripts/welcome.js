@@ -21,7 +21,20 @@ $(document).ready(function(){
             $(this)[0].children[0].outerHTML = '<i class="fab fa-angellist"></i>'
         }
     })
-
+ 
+    $(".is_know_mark").click(function(){
+        console.log('is_know');
+        console.log($(this)[0])
+        var class_name = $(this)[0].children[0].className
+        console.log('class_name', class_name);
+        if(class_name == 'fa fa-question'){
+            $(this)[0].children[0].outerHTML = '<i class="fab fa-angellist"></i>'
+        }else if(class_name == 'fab fa-angellist'){
+            $(this)[0].children[0].outerHTML = '<i class="fa fa-thumbs-down" aria-hidden="true"></i>'
+        }else{
+            $(this)[0].children[0].outerHTML = '<i class="fab fa-angellist"></i>'
+        }
+    })
 
     $(".is_know_before").click(function(){
         console.log('is_know');
@@ -45,6 +58,14 @@ $(document).ready(function(){
     
     this_week_clear();
 
+    var mark_clear = function(){
+        $(".is_know_mark").each(function(index){
+            $(this)[0].hidden = true;
+        })
+    }
+    
+    mark_clear();
+    
     var before_clear = function(){
         $(".is_know_before").each(function(index){
             $(this)[0].hidden = true;
@@ -65,7 +86,20 @@ $(document).ready(function(){
             $(this)[0].children[0].outerHTML = '<i class="fa fa-question" aria-hidden="true"></i>';
         })
     })
-  
+ 
+    $("#start_mark").click(function(){
+        $(".is_know_mark").each(function(index){
+            $(this)[0].hidden = false;
+            $(this)[0].children[0].outerHTML = '<i class="fa fa-question" aria-hidden="true"></i>';
+        })
+    })
+
+    $("#reset_mark").click(function(){
+        $(".is_know_mark").each(function(index){
+            $(this)[0].children[0].outerHTML = '<i class="fa fa-question" aria-hidden="true"></i>';
+        })
+    })
+
     $("#start_this_before").click(function(){
         $(".is_know_before").each(function(index){
             $(this)[0].hidden = false;
