@@ -23,7 +23,3 @@
 //= require highcharts/highcharts
 //= require highcharts/highcharts-more
 // require highcharts/highstock
-
-$(document).ready(function(){
-  // $("#bicycle").css("padding-bottom": "20px","width":"40%", "height":"40%")
-})
