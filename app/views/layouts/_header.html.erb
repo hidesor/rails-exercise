@@ -10,12 +10,13 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav">
-        <li class="active"><%= link_to('Home', root_path) %></li>
+        <li><%= link_to('Words', root_path) %></li> <!-- class="active"-->
+        <li><%= link_to('Calculation', arithmetic_index_path) %></li>
         <li class="dropdown">
           <!-- <a class="dropdown-toggle" data-toggle="dropdown" href="#">Page 1 <span class="caret"></span></a>
           <ul class="dropdown-menu"> -->
             <% if current_user %>
-               <li><%= link_to('Edit Words', admin_words_path ) %> </li> 
+               <li><%= link_to('Edit Words', admin_words_path ) %> </li>
             <% end %>
           </ul>
         </li>

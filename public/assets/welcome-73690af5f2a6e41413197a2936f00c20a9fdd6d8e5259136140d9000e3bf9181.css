@@ -1,0 +1,253 @@
+/* line 1, /Users/benwu/railsbridge/rails-exercise/app/assets/stylesheets/welcome.scss */
+.background-img {
+  background-image: url("/assets/pkthink-about-picture-911356a49a76f52890ba5ba9d0f5a6dd828380c96d12fd6fe5853628a22402f8.jpg");
+}
+
+/* line 4, /Users/benwu/railsbridge/rails-exercise/app/assets/stylesheets/welcome.scss */
+.to_white_text {
+  color: white;
+  text-shadow: 0px 1px 0px #c0c0c0, 0px 2px 0px #b0b0b0, 0px 3px 0px #a0a0a0, 0px 4px 0px #909090, 0px 5px 10px rgba(0, 0, 0, 0.6);
+}
+
+/* line 15, /Users/benwu/railsbridge/rails-exercise/app/assets/stylesheets/welcome.scss */
+.week_button {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  padding: 8px 12px;
+  border: 0px solid #ffffff;
+  border-radius: 8px;
+  background: #5ea600;
+  background: -webkit-gradient(linear, left top, left bottom, from(#5ea600), to(#04610f));
+  background: -moz-linear-gradient(top, #5ea600, #04610f);
+  background: linear-gradient(to bottom, #5ea600, #04610f);
+  -webkit-box-shadow: #858585 0px 0px 3px 0px;
+  -moz-box-shadow: #858585 0px 0px 3px 0px;
+  box-shadow: #858585 0px 0px 3px 0px;
+  text-shadow: #591717 1px 1px 1px;
+  font: normal normal normal 14px verdana;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* line 34, /Users/benwu/railsbridge/rails-exercise/app/assets/stylesheets/welcome.scss */
+.week_button:hover,
+.week_button:focus {
+  background: #71c700;
+  background: -webkit-gradient(linear, left top, left bottom, from(#71c700), to(#057412));
+  background: -moz-linear-gradient(top, #71c700, #057412);
+  background: linear-gradient(to bottom, #71c700, #057412);
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* line 43, /Users/benwu/railsbridge/rails-exercise/app/assets/stylesheets/welcome.scss */
+.week_button:active {
+  background: #386400;
+  background: -webkit-gradient(linear, left top, left bottom, from(#386400), to(#04610f));
+  background: -moz-linear-gradient(top, #386400, #04610f);
+  background: linear-gradient(to bottom, #386400, #04610f);
+}
+
+/* line 52, /Users/benwu/railsbridge/rails-exercise/app/assets/stylesheets/welcome.scss */
+.mark_button {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  padding: 8px 12px;
+  border: 1px solid #a12727;
+  border-radius: 8px;
+  background: #ff0000;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff0000), to(#a30505));
+  background: -moz-linear-gradient(top, #ff0000, #a30505);
+  background: linear-gradient(to bottom, #ff0000, #a30505);
+  text-shadow: #591717 1px 1px 1px;
+  font: normal normal normal 14px arial;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* line 68, /Users/benwu/railsbridge/rails-exercise/app/assets/stylesheets/welcome.scss */
+.mark_button:hover,
+.mark_button:focus {
+  background: #ff0000;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff0000), to(#c40606));
+  background: -moz-linear-gradient(top, #ff0000, #c40606);
+  background: linear-gradient(to bottom, #ff0000, #c40606);
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* line 77, /Users/benwu/railsbridge/rails-exercise/app/assets/stylesheets/welcome.scss */
+.mark_button:active {
+  background: #990000;
+  background: -webkit-gradient(linear, left top, left bottom, from(#990000), to(#a30505));
+  background: -moz-linear-gradient(top, #990000, #a30505);
+  background: linear-gradient(to bottom, #990000, #a30505);
+}
+
+/* line 85, /Users/benwu/railsbridge/rails-exercise/app/assets/stylesheets/welcome.scss */
+.set_mark_button {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  padding: 8px 12px;
+  border: 0px solid #a12727;
+  border-radius: 10px;
+  background: #ff8787;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff8787), to(#ff430a));
+  background: -moz-linear-gradient(top, #ff8787, #ff430a);
+  background: linear-gradient(to bottom, #ff8787, #ff430a);
+  text-shadow: #591717 1px 1px 1px;
+  font: italic normal bold 16px arial;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* line 102, /Users/benwu/railsbridge/rails-exercise/app/assets/stylesheets/welcome.scss */
+.set_mark_button:hover,
+.set_mark_button:focus {
+  background: #ffa2a2;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffa2a2), to(#ff500c));
+  background: -moz-linear-gradient(top, #ffa2a2, #ff500c);
+  background: linear-gradient(to bottom, #ffa2a2, #ff500c);
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* line 111, /Users/benwu/railsbridge/rails-exercise/app/assets/stylesheets/welcome.scss */
+.set_mark_button:active {
+  background: #995151;
+  background: -webkit-gradient(linear, left top, left bottom, from(#995151), to(#ff430a));
+  background: -moz-linear-gradient(top, #995151, #ff430a);
+  background: linear-gradient(to bottom, #995151, #ff430a);
+}
+
+/* line 122, /Users/benwu/railsbridge/rails-exercise/app/assets/stylesheets/welcome.scss */
+.set_week_button {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  padding: 8px 12px;
+  border: 0px solid #ffffff;
+  border-radius: 10px;
+  background: #b6d600;
+  background: -webkit-gradient(linear, left top, left bottom, from(#b6d600), to(#859600));
+  background: -moz-linear-gradient(top, #b6d600, #859600);
+  background: linear-gradient(to bottom, #b6d600, #859600);
+  text-shadow: #591717 1px 1px 1px;
+  font: italic normal bold 16px arial;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* line 139, /Users/benwu/railsbridge/rails-exercise/app/assets/stylesheets/welcome.scss */
+.set_week_button:hover {
+  background: #daff00;
+  background: -webkit-gradient(linear, left top, left bottom, from(#daff00), to(#a0b400));
+  background: -moz-linear-gradient(top, #daff00, #a0b400);
+  background: linear-gradient(to bottom, #daff00, #a0b400);
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* line 148, /Users/benwu/railsbridge/rails-exercise/app/assets/stylesheets/welcome.scss */
+.set_week_button:active {
+  background: #6d8000;
+  background: -webkit-gradient(linear, left top, left bottom, from(#6d8000), to(#859600));
+  background: -moz-linear-gradient(top, #6d8000, #859600);
+  background: linear-gradient(to bottom, #6d8000, #859600);
+  text-transform: uppercase;
+}
+
+/* line 155, /Users/benwu/railsbridge/rails-exercise/app/assets/stylesheets/welcome.scss */
+.set_week_button:focus {
+  text-transform: uppercase;
+}
+
+/* line 160, /Users/benwu/railsbridge/rails-exercise/app/assets/stylesheets/welcome.scss */
+.before_button {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  padding: 8px 12px;
+  border: 0px solid #ffffff;
+  border-radius: 8px;
+  background: #00bbff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00bbff), to(#1791bd));
+  background: -moz-linear-gradient(top, #00bbff, #1791bd);
+  background: linear-gradient(to bottom, #00bbff, #1791bd);
+  -webkit-box-shadow: #858585 0px 0px 3px 0px;
+  -moz-box-shadow: #858585 0px 0px 3px 0px;
+  box-shadow: #858585 0px 0px 3px 0px;
+  text-shadow: #591717 1px 1px 1px;
+  font: normal normal normal 14px verdana;
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* line 179, /Users/benwu/railsbridge/rails-exercise/app/assets/stylesheets/welcome.scss */
+.before_button:hover,
+.before_button:focus {
+  background: #00e0ff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00e0ff), to(#1caee3));
+  background: -moz-linear-gradient(top, #00e0ff, #1caee3);
+  background: linear-gradient(to bottom, #00e0ff, #1caee3);
+  color: #ffffff;
+  text-decoration: none;
+}
+
+/* line 188, /Users/benwu/railsbridge/rails-exercise/app/assets/stylesheets/welcome.scss */
+.before_button:active {
+  background: #007099;
+  background: -webkit-gradient(linear, left top, left bottom, from(#007099), to(#1791bd));
+  background: -moz-linear-gradient(top, #007099, #1791bd);
+  background: linear-gradient(to bottom, #007099, #1791bd);
+}
+
+/* line 196, /Users/benwu/railsbridge/rails-exercise/app/assets/stylesheets/welcome.scss */
+.set_before_button {
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+  padding: 8px 12px;
+  border: 0px solid #ffffff;
+  border-radius: 10px;
+  background: #00abd6;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00abd6), to(#003c96));
+  background: -moz-linear-gradient(top, #00abd6, #003c96);
+  background: linear-gradient(to bottom, #00abd6, #003c96);
+  text-shadow: #591717 1px 1px 1px;
+  font: italic normal bold 16px arial;
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* line 213, /Users/benwu/railsbridge/rails-exercise/app/assets/stylesheets/welcome.scss */
+.set_before_button:hover {
+  background: #00cdff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#00cdff), to(#0048b4));
+  background: -moz-linear-gradient(top, #00cdff, #0048b4);
+  background: linear-gradient(to bottom, #00cdff, #0048b4);
+  color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* line 222, /Users/benwu/railsbridge/rails-exercise/app/assets/stylesheets/welcome.scss */
+.set_before_button:active {
+  background: #006780;
+  background: -webkit-gradient(linear, left top, left bottom, from(#006780), to(#003c96));
+  background: -moz-linear-gradient(top, #006780, #003c96);
+  background: linear-gradient(to bottom, #006780, #003c96);
+  text-transform: uppercase;
+}
+
+/* line 229, /Users/benwu/railsbridge/rails-exercise/app/assets/stylesheets/welcome.scss */
+.set_before_button:focus {
+  text-transform: uppercase;
+}

@@ -1,0 +1,10 @@
+/* line 1, /Users/benwu/railsbridge/rails-exercise/app/assets/stylesheets/arithmetic.scss */
+.background-img {
+  background-image: url("/assets/rainbow-hd-949005f9e0f40b718f30a833d63f3c53d07a8375512b9c75808aa6e5bce4ae76.jpg");
+}
+
+/* line 4, /Users/benwu/railsbridge/rails-exercise/app/assets/stylesheets/arithmetic.scss */
+.to_white_text {
+  color: white;
+  text-shadow: 0px 1px 0px #c0c0c0, 0px 2px 0px #b0b0b0, 0px 3px 0px #a0a0a0, 0px 4px 0px #909090, 0px 5px 10px rgba(0, 0, 0, 0.6);
+}
