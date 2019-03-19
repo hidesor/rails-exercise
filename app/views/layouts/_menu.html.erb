@@ -1,7 +1,9 @@
-<div class='menu_bar fix'>
-    <div class='padding_5 writing_tb-rl'>
-        <button type="button" class="week_button"><i class='fab fa-weebly'> </i></button>
-        <button type="button" class="mark_button"><i class="fas fa-info"></i></button>
-        <button type="button" class="before_button"><i class="fab fa-behance"></i></button>
+<% if params[:controller] == 'welcomes' %>
+    <div class='menu_bar fix'>
+        <div class='padding_5 writing_tb-rl'>
+            <button type="button" class="week_button"><i class='fab fa-weebly'> </i></button>
+            <button type="button" class="mark_button"><i class="fas fa-info"></i></button>
+            <button type="button" class="before_button"><i class="fab fa-behance"></i></button>
+        </div>
     </div>
-</div>
+<% end %>

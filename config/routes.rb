@@ -31,6 +31,7 @@ Rails.application.routes.draw do
   end
 
   resources :houses
+  resources :arithmetic
 
   namespace :admin do
     resources :words
