@@ -9,7 +9,7 @@ $(document).ready(function(){
     });
 
     $(".is_know_week").click(function(){
-        console.log('is_know');
+        console.log('is_know_week');
         console.log($(this)[0])
         var class_name = $(this)[0].children[0].className
         console.log('class_name', class_name);
@@ -23,7 +23,7 @@ $(document).ready(function(){
     })
 
     $(".is_know_mark").click(function(){
-        console.log('is_know');
+        console.log('is_know_mark');
         console.log($(this)[0])
         var class_name = $(this)[0].children[0].className
         console.log('class_name', class_name);
@@ -37,7 +37,7 @@ $(document).ready(function(){
     })
 
     $(".is_know_before").click(function(){
-        console.log('is_know');
+        console.log('is_know_before');
         console.log($(this)[0])
         var class_name = $(this)[0].children[0].className
         console.log('class_name', class_name);
