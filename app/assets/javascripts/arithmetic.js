@@ -1,3 +1,6 @@
-$(document).ready(function(){
-   console.log('arithmetic,arithmetic');
+$(document).ready(function(){ 
+   $('#test_start').on('click',function(){
+       console.log('test') 
+   }) 
+
 });
