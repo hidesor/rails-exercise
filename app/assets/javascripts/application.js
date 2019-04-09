@@ -16,6 +16,6 @@
 //= require bootstrap-sprockets
 //= require select2
 //= require vue
-//= require_tree .
+
 
 

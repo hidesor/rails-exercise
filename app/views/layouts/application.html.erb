@@ -3,8 +3,8 @@
 <head>
   <title>Rain Learn</title>
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
-  <%= javascript_include_tag 'application' %>
+  <%# <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %1> %>
+  <%# <%= javascript_include_tag 'application' %1> %>
    <%= yield :head_scripts %>
 
   <!-- <link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css"> -->
@@ -28,11 +28,10 @@
     <% end %>
   </div> -->
   <%= render 'layouts/menu' %>
-
+   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %> 
   <div class="body_yield">
     <%= yield %>
   </div>
-
   <!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script> -->
   <!-- <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script> -->
 </body>
