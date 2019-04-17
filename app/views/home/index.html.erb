@@ -1,20 +1,33 @@
-<img id="bicycle" src="<%= image_url("bicycle.png") %>" alt="Italian Trulli" class="bicycle_01">
+<%# <img id="bicycle" src="<%= image_url("bicycle.png") %1>" alt="Italian Trulli" class="bicycle_01"> %>
 
-<img id="bicycle" src="<%= image_url("bird.png") %>" alt="Italian Trulli" class="bird_01">
+<%# <img id="bicycle" src="<%= image_url("bird.png") %1>" alt="Italian Trulli" class="bird_01"> %>
 
+<div id='app'>
+    {{ message }}
+</div>
 
+<div id="app-2">
+  <span v-bind:title="message">
+    鼠标悬停几秒钟查看此处动态绑定的提示信息！
+  </span>
+</div>
 
+<div id="app-3">
+  <p v-if="seen">现在你看到我了</p>
+</div>
 
-    <div id='app'>
-        {{ message }}
-    </div>
+<div id="app-4">
+  <ol>
+    <li v-for="todo in todos">
+      {{ todo.text }}
+    </li>
+  </ol>
+</div>
 
-    <script>
-        new Vue({
-            el:'#app',
-            data:{
-                message:'Hello World!'
-            }
-        });
-    </script>
+<div id="app-5">
+  <p>{{ message }}</p>
+  <button v-on:click="reverseMessage">逆转消息</button>
+</div>
+
+<%= javascript_include_tag "home" %>
 
