@@ -12,18 +12,10 @@
 //
 //= require jquery
 //= require jquery_ujs
-//= require highcharts/highcharts
 //= require turbolinks
 //= require bootstrap-sprockets
 //= require select2
 //= require vue
-//= require_tree .
 
 
-//= require highcharts/highcharts
-//= require highcharts/highcharts-more
-// require highcharts/highstock
 
-$(document).ready(function(){
-  // $("#bicycle").css("padding-bottom": "20px","width":"40%", "height":"40%")
-})

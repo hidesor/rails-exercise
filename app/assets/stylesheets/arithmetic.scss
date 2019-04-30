@@ -10,3 +10,56 @@
     0px 4px 0px #909090,
     0px 5px 10px rgba(0, 0, 0, 0.6);
 }
+.arithmetic_icon{
+    font-size: 20pt;
+}
+.arithmetic_lv_icon{
+    font-size: 16pt;
+}
+.checkbox_size{
+    width: 20px; /*Desired width*/
+    height: 20px; /*Desired height*/
+}
+.merge_auto{
+    margin: 0px auto;
+}
+
+// button
+.start_button {
+    display: inline-block;
+    text-align: center;
+    vertical-align: middle;
+    padding: 8px 12px;
+    border: 0px solid #a12727;
+    border-radius: 8px;
+    background: #36d7ff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#36d7ff), to(#2289e3));
+    background: -moz-linear-gradient(top, #36d7ff, #2289e3);
+    background: linear-gradient(to bottom, #36d7ff, #2289e3);
+    text-shadow: #737373 1px 1px 1px;
+    font: italic normal bold 14px arial;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase
+}
+.start_button:hover {
+    background: #41ffff;
+    background: -webkit-gradient(linear, left top, left bottom, from(#41ffff), to(#29a4ff));
+    background: -moz-linear-gradient(top, #41ffff, #29a4ff);
+    background: linear-gradient(to bottom, #41ffff, #29a4ff);
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase
+}
+.start_button:active {
+    background: #208199;
+    background: -webkit-gradient(linear, left top, left bottom, from(#208199), to(#2289e3));
+    background: -moz-linear-gradient(top, #208199, #2289e3);
+    background: linear-gradient(to bottom, #208199, #2289e3);
+    text-transform: uppercase
+}
+.start_button:focus {
+    text-transform: uppercase
+}
+
+
