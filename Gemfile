@@ -2,7 +2,7 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 ruby '2.3.6'
-gem 'rails', '5.0.0'
+gem 'rails'
 
 gem "puma"
 
@@ -41,6 +41,7 @@ gem 'redis'
 
 gem 'kaminari'
 gem 'faker'
+gem 'rest-client', '~> 1.8'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
