@@ -2,6 +2,7 @@ class MessagesController < ApplicationController
 
   def index
     @messages = Message.all
+    Company.new(12345678).create 
   end
 
   def create
