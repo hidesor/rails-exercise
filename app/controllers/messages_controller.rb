@@ -2,7 +2,7 @@ class MessagesController < ApplicationController
 
   def index
     @messages = Message.all
-    Company.new(12345678).create 
+    Company.new("54368812").create 
   end
 
   def create
