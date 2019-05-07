@@ -113,6 +113,10 @@ GEM
       railties (>= 3.2, < 6.1)
     globalid (0.4.2)
       activesupport (>= 4.2.0)
+    graphiql-rails (1.7.0)
+      railties
+      sprockets-rails
+    graphql (1.9.4)
     hash-deep-merge (0.1.1)
     http-cookie (1.0.3)
       domain_name (~> 0.5)
@@ -323,6 +327,8 @@ DEPENDENCIES
   ejs
   faker
   font-awesome-rails
+  graphiql-rails
+  graphql
   jbuilder
   jquery-rails
   kaminari
