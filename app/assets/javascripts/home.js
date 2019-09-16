@@ -45,4 +45,26 @@ $(document).ready(function(){
             }
         }
     })
+
+    let firstVueObj = new Vue({
+        el:'#first_vue',
+        data:{
+            content:'Hello!world!',
+        },
+    })
+
+    // 點擊觸發時間
+    let timeData = {
+        content:'點我看時間',
+    }
+    let timeMethods = {
+        getTime: ()=>{
+            console.log(String(new Date()))
+        },
+    }
+    let timeDiv = new Vue({
+        el:'#timeDiv',
+        data : timeData,
+        methods: timeMethods,
+    })
 })
