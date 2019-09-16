@@ -45,7 +45,15 @@ gem 'rest-client', '~> 1.8'
 
 
 gem 'graphql'
-gem 'graphiql-rails', group: :development
+gem 'batch-loader'
+gem 'graphql-query-resolver'
+gem 'search_object', '1.2.0'
+gem 'search_object_graphql', '0.1'
+gem 'graphiql-rails', '1.4.4'
+gem 'apollo_upload_server', '2.0.0.beta.3'
+gem 'apollo-tracing'
+gem 'graphql-cache'
+
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'

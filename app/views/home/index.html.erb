@@ -12,6 +12,7 @@
   </span>
 </div>
 
+
 <div id="app-3">
   <p v-if="seen">现在你看到我了</p>
 </div>
@@ -29,5 +30,14 @@
   <button v-on:click="reverseMessage">逆转消息</button>
 </div>
 
-<%= javascript_include_tag "home" %>
 
+<div id="first_vue">
+    {{ content }}
+</div>
+
+<div id="timeDiv" v-on:click="getTime" >
+  {{content}}
+</div>
+
+
+<%= javascript_include_tag "home" %>
