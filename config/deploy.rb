@@ -1,10 +1,10 @@
-`ssh-add`
+ssh 'ssh-add'
 
 # config valid only for current version of Capistrano
 lock '3.5.0'
 
 set :application, 'rails-exercise'
-set :repo_url, 'git@github.com:ihower/rails-exercise-ac9.git'
+set :repo_url, 'git@github.com:hidesor123/rails-exercise.git'
 
 # Default branch is :master
 # ask :branch, `git rev-parse --abbrev-ref HEAD`.chomp
@@ -26,11 +26,13 @@ set :deploy_to, '/home/deploy/rails-exercise'
 # set :pty, true
 
 # Default value for :linked_files is []
-set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/secrets.yml')
+# set :linked_files, fetch(:linked_files, []).push('config/database.yml', 'config/secrets.yml')
+append :linked_files, "config/database.yml", "config/secrets.yml"
 
 # Default value for linked_dirs is []
-set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'public/system')
-
+# set :linked_dirs, fetch(:linked_dirs, []).push('log', 'tmp/pids', 'tmp/cache', 'tmp/sockets', 'public/system')
+append :linked_dirs, "log", "tmp/pids", "tmp/cache", "tmp/sockets", "public/system"
+set :passenger_restart_with_touch, true
 # Default value for default_env is {}
 # set :default_env, { path: "/opt/ruby/bin:$PATH" }
 
