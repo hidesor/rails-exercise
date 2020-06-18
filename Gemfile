@@ -2,7 +2,9 @@ source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
 ruby '2.3.6'
-gem 'rails', '5.0.0'
+gem 'activesupport', '~> 5.0'
+
+gem 'rails'
 
 gem "puma"
 
@@ -41,6 +43,18 @@ gem 'redis'
 
 gem 'kaminari'
 gem 'faker'
+gem 'rest-client', '~> 1.8'
+
+
+gem 'graphql'
+gem 'batch-loader'
+gem 'graphql-query-resolver'
+gem 'search_object', '1.2.0'
+gem 'search_object_graphql', '0.1'
+gem 'graphiql-rails', '1.4.4'
+gem 'apollo_upload_server'
+gem 'apollo-tracing'
+gem 'graphql-cache'
 
 # Use jquery as the JavaScript library
 gem 'jquery-rails'
@@ -59,7 +73,6 @@ gem 'will_paginate'
 # gem 'unicorn'
 gem 'paperclip'
 
-gem 'pry-byebug'
 gem 'lazy_high_charts'
 
 # Use Capistrano for deployment
