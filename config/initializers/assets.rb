@@ -8,4 +8,4 @@ Rails.application.config.assets.version = '1.0'
 
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
-Rails.application.config.assets.precompile += %w( oxo.js home.js admin/word.js welcome.scss welcome.js arithmetic.scss arithmetic.js)
+Rails.application.config.assets.precompile += %w( oxo.js home.js admin/word.js welcome.scss arithmetic.scss arithmetic.js)
